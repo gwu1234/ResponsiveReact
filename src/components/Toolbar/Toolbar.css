@@ -24,6 +24,10 @@
   font-size: 1.5rem;
 }
 
+.toolbar__logo a:hover {
+  color: #fa923f;
+}
+
 .spacer {
   flex: 1;
 }
@@ -49,12 +53,14 @@
   color: #fa923f;
 }
 
+/* if width <=768px*/
 @media (max-width: 768px) {
   .toolbar_navigation-items {
     display: none;
   }
 }
 
+/* if wifth >= 760px */
 @media (min-width: 769px) {
   .toolbar__toggle-button {
     display: none;

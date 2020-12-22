@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import PageNotFound from './components/PageNotFound';
 import Products from './components/Products';
 import Users from './components/Users';
+import Company from './components/Company';
 
 const Switcher = () => {
   const routes = [
@@ -18,6 +19,10 @@ const Switcher = () => {
     {
       path: "/users",
       component: Users,
+    },
+    {
+      path: "/company",
+      component: Company,
     },
     {
       path: "/",

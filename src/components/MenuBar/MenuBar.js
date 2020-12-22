@@ -11,6 +11,9 @@ const MenuBar = props => {
     <nav className={drawerClasses}>
       <ul>
         <li>
+            <Link to="/company">Company</Link>
+        </li>
+        <li>
             <Link to="/products">Products</Link>
         </li>
         <li>

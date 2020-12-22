@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link} from 'react-router-dom'
 import './MenuBar.css';
 
 const MenuBar = props => {
@@ -11,10 +11,10 @@ const MenuBar = props => {
     <nav className={drawerClasses}>
       <ul>
         <li>
-          <a href="/">Products</a>
+            <Link to="/products">Products</Link>
         </li>
         <li>
-          <a href="/">Users</a>
+            <Link to="/users">Users</Link>
         </li>
       </ul>
     </nav>

@@ -1,13 +1,43 @@
 import React, { Component } from 'react';
 
+import Toolbar from './Toolbar/Toolbar';
+import MenuBar from './MenuBar/MenuBar';
+import Backdrop from './Backdrop/Backdrop';
+
 class Products extends Component {
-    render() {
-        return (
-            <div className="">
-                products
-            </div>
-        )
+  state = {
+    menuBarOpen: false
+  };
+
+  drawerToggleClickHandler = () => {
+    this.setState((prevState) => {
+      return {menuBarOpen: !prevState.menuBarOpen};
+    });
+  };
+
+  backdropClickHandler = () => {
+    this.setState({menuBarOpen: false});
+  };
+
+  render() {
+    let backdrop;
+
+    if (this.state.menuBarOpen) {
+      backdrop = <Backdrop click={this.backdropClickHandler} />
     }
+    return (
+      <div style={{height: '100%'}}>
+        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
+        <MenuBar show={this.state.menuBarOpen} />
+        {backdrop}
+        <div style={{marginTop: '64px'}}>
+          <p>This is Products Page </p>
+        </div>
+        
+      </div>
+    );
+  }
 }
 
 export default Products;
+

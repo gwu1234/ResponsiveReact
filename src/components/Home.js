@@ -31,7 +31,7 @@ class Home extends Component {
         <MenuBar show={this.state.menuBarOpen} />
         {backdrop}
         <div style={{marginTop: '64px'}}>
-          <p>This is the page content!</p>
+          <p>This is Home Page </p>
         </div>
         
       </div>

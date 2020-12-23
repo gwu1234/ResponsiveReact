@@ -3,7 +3,7 @@ import React from 'react';
 import Toolbar from './Toolbar/Toolbar';
 import MenuBar from './MenuBar/MenuBar';
 import Backdrop from './Backdrop/Backdrop';
-import './products.css';
+import './productDetail.css';
 
 
 const ProductDetail = ({match}) => {
@@ -20,11 +20,30 @@ const ProductDetail = ({match}) => {
           <Toolbar drawerClickHandler={drawerToggleClickHandler} />
           <MenuBar show={menuBarOpen} />
           {backdrop}
-          
-          
-          <div style={{width:"100%", fontSize:"20px", marginTop:"280px", textAlign:"center"}}>     
-                 {"productId = " + match.params.productId || 'productId'} 
-          </div>       
+               
+          <div class="productdetail-container-3">     
+                <div>    
+                     {"productId = " + match.params.productId || 'productId'} 
+                </div>   
+                <div>    
+                     {"product name and description"}
+                </div>   
+                <div>    
+                     product photo
+                </div>   
+          </div>   
+          <div class="productdetail-container-2">     
+                <div>    
+                     {"productId = " + match.params.productId || 'productId'} 
+                </div>   
+                <div>    
+                     {"product name and description"}
+                </div>   
+                <div>    
+                     product photo
+                </div>   
+          </div>     
+
       </div>
     );
 }

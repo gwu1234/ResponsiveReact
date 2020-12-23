@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link} from 'react-router-dom'
 
 import Toolbar from './Toolbar/Toolbar';
 import MenuBar from './MenuBar/MenuBar';
@@ -32,8 +33,9 @@ class Products extends Component {
           <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
           <MenuBar show={this.state.menuBarOpen} />
           {backdrop}
+          
           <div class="product-container-3">     
-              <div class="product-item">A1</div>
+              <div class="product-item"><Link to="/products/A1">A1</Link></div>
               <div class="product-item">A2</div>
               <div class="product-item">A3</div>       
               <div class="product-item">A4</div>
@@ -44,7 +46,7 @@ class Products extends Component {
               <div class="product-item">A9</div>  
           </div>  
           <div class="product-container-2">          
-              <div class="product-item">B1</div>
+              <div class="product-item"><Link to="/products/B1">B1</Link></div>
               <div class="product-item">B2</div>
               <div class="product-item">B3</div>
               <div class="product-item">B4</div>
@@ -54,7 +56,7 @@ class Products extends Component {
               <div class="product-item">B8</div>
               <div class="product-item">B9</div>
               <div class="product-item">B10</div>
-          </div>          
+          </div>       
       </div>
     );
   }

@@ -3,6 +3,7 @@ import Home from './components/Home';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import PageNotFound from './components/PageNotFound';
 import Products from './components/Products';
+import ProductDetail from './components/ProductDetail';
 import Users from './components/Users';
 import Company from './components/Company';
 
@@ -15,6 +16,11 @@ const Switcher = () => {
     {
       path: "/products",
       component: Products,
+    },
+    //path="/:filter" component={App} />
+    {
+      path: "/products/:productId",
+      component: ProductDetail,
     },
     {
       path: "/users",

@@ -52,6 +52,7 @@ const ResponsiveMateriaUI = () => {
           setButtonStyle ({...buttonStyle, fontSize:"14px", fontWeight:"normal", color:"white", backgroundColor:"green", padding:"5px"})
        }
        //console.log(buttonStyle)
+       return () => window.removeEventListener('resize', handleResize);
     },
     [screenSize],
   );

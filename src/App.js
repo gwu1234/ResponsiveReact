@@ -6,6 +6,7 @@ import Products from './components/Products';
 import ProductDetail from './components/ProductDetail';
 import Users from './components/Users';
 import Company from './components/Company';
+import ResponsiveMateriaUI from './components/ResponsiveGrid';
 
 const Switcher = () => {
   const routes = [
@@ -17,7 +18,6 @@ const Switcher = () => {
       path: "/products",
       component: Products,
     },
-    //path="/:filter" component={App} />
     {
       path: "/products/:productId",
       component: ProductDetail,
@@ -29,6 +29,10 @@ const Switcher = () => {
     {
       path: "/company",
       component: Company,
+    },
+    {
+      path: "/responsive",
+      component: ResponsiveMateriaUI,
     },
     {
       path: "/",

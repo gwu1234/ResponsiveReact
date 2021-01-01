@@ -24,6 +24,11 @@ this means that for window width of 769 px or more, toolbar__toggle-button is no
 }
 this means for window widths  of 769px or more, side-drawer is not visible
 
+4)
+using materia-ui, break-points, grid 
+<Grid item xs={6} sm={3}>
+
+
 
 
 

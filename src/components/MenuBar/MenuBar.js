@@ -19,6 +19,9 @@ const MenuBar = props => {
         <li>
             <Link to="/users">Users</Link>
         </li>
+        <li>
+            <Link to="/responsive">grid demo</Link>
+        </li>       
       </ul>
     </nav>
   );

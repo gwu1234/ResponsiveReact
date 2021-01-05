@@ -28,6 +28,17 @@ this means for window widths  of 769px or more, side-drawer is not visible
 using materia-ui, break-points, grid 
 <Grid item xs={6} sm={3}>
 
+4) using responsive hook
+window.addEventListener('resize', handleResize);
+React.useEffect (
+    () => {
+       if (screenSize >= 1280 ) {
+          setScreenType('desktop')
+          setButtonStyle ({...buttonStyle, fontSize:"22px", fontWeight:"bold", color:"black", backgroundColor:"white"})
+      }
+)
+listen to screen size changes, and dynamically change css styles
+
 
 
 

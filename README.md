@@ -24,19 +24,23 @@ this means that for window width of 769 px or more, toolbar__toggle-button is no
 }
 this means for window widths  of 769px or more, side-drawer is not visible
 
-4)
-using materia-ui, break-points, grid 
-<Grid item xs={6} sm={3}>
+4) using materia-ui, break-points, grid  <Grid item xs={6} sm={3}>
 
-4) using responsive hook
+5) using responsive hook
+
 window.addEventListener('resize', handleResize);
+
 React.useEffect (
+
     () => {
        if (screenSize >= 1280 ) {
+
           setScreenType('desktop')
-          setButtonStyle ({...buttonStyle, fontSize:"22px", fontWeight:"bold", color:"black", backgroundColor:"white"})
+
+          setButtonStyle ({...buttonStyle, fontSize:"22px", fontWeight:"bold", color:"black })
       }
 )
+
 listen to screen size changes, and dynamically change css styles
 
 
